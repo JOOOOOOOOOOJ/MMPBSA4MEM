@@ -1,0 +1,121 @@
+| Run on Mon Jul 29 03:52:45 2024
+|
+|Input file:
+|--------------------------------------------------------------
+|&general
+|	strip_mask=':WAT:Cl-:Na+:PA:OL:PC:PE:PS:CHL',
+|	use_sander=1,
+|	startframe=1, endframe=200, interval=1,
+|	keep_files=0, debug_printlevel=2
+|/
+|&pb
+|	radiopt=0, indi=20.0, istrng=0.150,
+|	emem=4.0, fillratio=1.25, ipb=1, memopt=2,
+|	nfocus=1, bcopt=10, eneopt=1, cutfd=7.0,
+|	cutnb=99.0, npbverb=1, poretype=1,
+|	solvopt=2, maxarcdot=15000, inp=2
+|/
+|--------------------------------------------------------------
+|MMPBSA.py Version=14.0
+|Solvated complex topology file:  4pxz_muta.prmtop
+|Complex topology file:           complex.prmtop
+|Solvated receptor topology file: /home8/czzhao/mmpbsa_new/4ntj_muta/PSB/70D/Opt/Receptor_gaff/4ntj_rec_muta.prmtop
+|Receptor topology file:          receptor.prmtop
+|Solvated ligand topology file:   /home8/czzhao/mmpbsa_new/4pxz/70D/MTM/Ligand/6ad.prmtop
+|Ligand topology file:            ligand.prmtop
+|Initial mdcrd(s):                ../05_Prod.crd
+|Initial Receptor mdcrd(s):       /home8/czzhao/mmpbsa_new/4ntj_muta/PSB/70D/Opt/Receptor_gaff/rep18/05_Prod.crd
+|Initial Ligand mdcrd(s):         /home8/czzhao/mmpbsa_new/4pxz/70D/MTM/Ligand/rep18/06_Prod.crd
+|
+|Receptor mask:                  ":1-396"
+|Ligand mask:                    ":397"
+|Ligand residue name is "6AD"
+|
+|Calculations performed using 200.0 complex frames.
+|Poisson Boltzmann calculations performed using internal PBSA solver in sander.
+|
+|All units are reported in kcal/mole.
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+POISSON BOLTZMANN:
+
+Complex:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+BOND                      1249.0920               28.5920              2.0218
+ANGLE                     3257.2179               43.2610              3.0590
+DIHED                     2206.3401               24.6559              1.7434
+VDWAALS                  -3334.2514               27.8380              1.9684
+EEL                      -1549.1976                4.1747              0.2952
+1-4 VDW                   1590.9668               17.2825              1.2221
+1-4 EEL                    790.3882                2.7785              0.1965
+ENPOLAR                   3252.6765               10.5032              0.7427
+EDISPER                  -1812.0918               12.1755              0.8609
+
+G gas                     4210.5559               63.7154              4.5054
+G solv                    1440.5848                6.8491              0.4843
+
+TOTAL                     5651.1407               63.7417              4.5072
+
+
+Receptor:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+BOND                      1228.5444               28.8101              2.0372
+ANGLE                     3207.9626               41.8872              2.9619
+DIHED                     2152.8250               22.2561              1.5737
+VDWAALS                  -3131.8823               24.0905              1.7035
+EEL                      -1547.4153                4.1496              0.2934
+1-4 VDW                   1570.3403               17.0166              1.2033
+1-4 EEL                    834.7915                2.6793              0.1895
+ENPOLAR                   3350.0709               12.4588              0.8810
+EDISPER                  -2010.5302               15.5367              1.0986
+
+G gas                     4315.1663               61.5665              4.3534
+G solv                    1339.5406                8.0448              0.5689
+
+TOTAL                     5654.7069               60.4428              4.2740
+
+
+Ligand:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+BOND                        16.4915                3.8048              0.2690
+ANGLE                       49.7770                6.5754              0.4650
+DIHED                       38.4351                3.0609              0.2164
+VDWAALS                     -5.2155                1.5627              0.1105
+EEL                         14.4059                0.6506              0.0460
+1-4 VDW                     12.6533                1.8265              0.1292
+1-4 EEL                    -47.9892                0.7926              0.0560
+ENPOLAR                     41.0107                0.5850              0.0414
+EDISPER                    -41.6434                0.7573              0.0535
+
+G gas                       78.5582                8.0833              0.5716
+G solv                      -0.6326                0.4999              0.0353
+
+TOTAL                       77.9256                8.0311              0.5679
+
+
+Differences (Complex - Receptor - Ligand):
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+BOND                         4.0560               40.7676              2.8827
+ANGLE                       -0.5216               60.5746              4.2833
+DIHED                       15.0799               33.3559              2.3586
+VDWAALS                   -197.1536               36.8476              2.6055
+EEL                        -16.1881                5.9220              0.4187
+1-4 VDW                      7.9731               24.3226              1.7199
+1-4 EEL                      3.5858                3.9404              0.2786
+EPB                          0.0000                0.0000              0.0000
+ENPOLAR                   -138.4051               16.3059              1.1530
+EDISPER                    240.0818               19.7536              1.3968
+
+DELTA G gas               -183.1686               88.9687              6.2910
+DELTA G solv               101.6768               10.5773              0.7479
+
+DELTA TOTAL                -81.4918               88.2090              6.2373
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
