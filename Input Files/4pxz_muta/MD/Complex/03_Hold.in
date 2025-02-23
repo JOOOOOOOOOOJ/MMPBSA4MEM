@@ -1,0 +1,29 @@
+Lipid production 298K 500ps
+ &cntrl
+  imin=0,
+  ntx=5,
+  irest=1, 
+  ntc=2,
+  ntf=2,
+  tol=0.0000001,
+  nstlim=5000000,
+  ntt=3,
+  gamma_ln=1.0,
+  temp0=298.0,
+  ntpr=50000,
+  ntwr=50000,
+  ntwx=50000,
+  dt=0.002,
+  ig=-1, 
+  ntb=2,
+  ntp=2,
+  cut=10.0,
+  ioutfm=1,
+  ntxo=2,
+  ntr=1,
+  restraint_wt=4, restraintmask=':1-396,1436 & !@H=',
+ /
+ /
+ &ewald
+  skinnb=5, ! Increase skinnb to avoid skinnb errors
+ /

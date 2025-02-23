@@ -1,0 +1,28 @@
+source leaprc.water.tip3p
+source leaprc.protein.ff19SB
+source leaprc.gaff2
+source leaprc.lipid21
+loadamberparams frcmod.ionsjc_tip3p
+
+AZD =loadMol2 ~/mmpbsa_new/4ntj/AZJ/70D/Opt/Ligand/big/azd_big.mol2
+loadamberparams ~/mmpbsa_new/4ntj/AZJ/70D/Opt/Ligand/big/azd_big.frcmod
+
+set default PBRadii mbondi2
+
+4ntj =loadpdb 4ntj_cpptraj_remove_amber_muta.pdb
+
+bond 4ntj.2.SG 4ntj.361.SG
+
+com = combine { 4ntj AZD }
+
+set com box { 103.7740028053522135, 104.5129963159561207, 146.15200379490853606 }
+
+addIons2 com Na+ 0
+addIons2 com Cl- 0
+
+saveamberparm com 4ntj_azd_big_muta.prmtop 4ntj_azd_big_muta.inpcrd
+
+savepdb com 4ntj_azd_big_muta_tleap.pdb
+
+quit
+

@@ -1,0 +1,20 @@
+source leaprc.water.tip3p
+source leaprc.gaff2
+loadamberparams frcmod.ionsjc_tip3p
+
+AZD =loadMol2 azd_big.mol2
+loadamberparams azd_big.frcmod
+
+set default PBRadii mbondi2
+
+addIons2 AZD Na+ 4
+addIons2 AZD Cl- 4
+
+SolvateOct AZD TIP3PBOX 8.0
+
+saveamberparm AZD azd_big.prmtop azd_big.inpcrd
+
+savepdb AZD azd_big_tleap.pdb
+
+quit
+

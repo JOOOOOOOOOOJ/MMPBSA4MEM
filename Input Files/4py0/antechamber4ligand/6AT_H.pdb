@@ -1,0 +1,99 @@
+REMARK   1 File created by GaussView 6.0.16
+HETATM    1  CAA 6AT A1201      45.647  36.454  72.262                       C
+HETATM    2  OAC 6AT A1201      50.494  42.463  57.510                       O
+HETATM    3  OAD 6AT A1201      48.841  41.912  63.486                       O
+HETATM    4  OAE 6AT A1201      51.698  41.338  59.978                       O
+HETATM    5  OAH 6AT A1201      48.763  40.752  58.310                       O
+HETATM    6  OAI 6AT A1201      48.057  43.073  57.721                       O
+HETATM    7  OAJ 6AT A1201      47.179  40.681  61.982                       O
+HETATM    8  OAK 6AT A1201      50.952  42.851  61.870                       O
+HETATM    9  OAS 6AT A1201      49.469  42.617  59.795                       O
+HETATM   10  OAT 6AT A1201      49.696  40.595  61.398                       O
+HETATM   11  PBE 6AT A1201      49.262  42.141  58.269                       P
+HETATM   12  PBF 6AT A1201      48.647  40.723  62.631                       P
+HETATM   13  PBG 6AT A1201      50.516  41.822  60.724                       P
+HETATM   14  C5' 6AT A1201      49.326  38.161  62.971                       C
+HETATM   15  O5' 6AT A1201      48.761  39.367  63.499                       O
+HETATM   16  C4' 6AT A1201      48.710  36.935  63.663                       C
+HETATM   17  O4' 6AT A1201      48.368  37.175  65.054                       O
+HETATM   18  C3' 6AT A1201      47.456  36.476  62.940                       C
+HETATM   19  O3' 6AT A1201      47.472  35.038  62.822                       O
+HETATM   20  C2' 6AT A1201      46.334  36.943  63.846                       C
+HETATM   21  O2' 6AT A1201      45.213  36.053  63.803                       O
+HETATM   22  C1' 6AT A1201      46.950  36.958  65.239                       C
+HETATM   23  N1  6AT A1201      45.395  38.317  69.961                       N
+HETATM   24  C2  6AT A1201      45.813  37.101  69.547                       C
+HETATM   25  S2  6AT A1201      45.895  35.707  70.661                       S
+HETATM   26  N3  6AT A1201      46.186  36.936  68.262                       N
+HETATM   27  C4  6AT A1201      46.132  37.972  67.394                       C
+HETATM   28  C5  6AT A1201      45.715  39.175  67.811                       C
+HETATM   29  C6  6AT A1201      45.347  39.341  69.088                       C
+HETATM   30  N6  6AT A1201      44.940  40.558  69.451                       N
+HETATM   31  N7  6AT A1201      45.759  40.009  66.774                       N
+HETATM   32  C8  6AT A1201      46.214  39.334  65.726                       C
+HETATM   33  N9  6AT A1201      46.423  38.069  66.095                       N
+HETATM   34 HAA1 6AT A1201      45.759  35.697  73.038                       H
+HETATM   35 HAA2 6AT A1201      44.645  36.881  72.312                       H
+HETATM   36 HAA3 6AT A1201      46.385  37.241  72.414                       H
+HETATM   37  HAI 6AT A1201      47.870  42.850  56.806                       H
+HETATM   38  H5' 6AT A1201      50.403  38.165  63.139                       H
+HETATM   39 H5'' 6AT A1201      49.128  38.108  61.900                       H
+HETATM   40  H4' 6AT A1201      49.438  36.124  63.628                       H
+HETATM   41  H3' 6AT A1201      47.382  36.944  61.959                       H
+HETATM   42 HO3' 6AT A1201      46.680  34.745  62.365                       H
+HETATM   43  H2' 6AT A1201      46.022  37.949  63.565                       H
+HETATM   44 HO2' 6AT A1201      44.836  36.055  62.920                       H
+HETATM   45  H1' 6AT A1201      46.782  35.999  65.730                       H
+HETATM   46  H61 6AT A1201      44.917  41.306  68.773                       H
+HETATM   47  H62 6AT A1201      44.655  40.732  70.404                       H
+HETATM   48  H8  6AT A1201      46.386  39.740  64.740                       H
+TER      48      6AT A1201
+END
+CONECT    1   34   36   35   25
+CONECT    2   11
+CONECT    3   12
+CONECT    4   13
+CONECT    5   11
+CONECT    6   11   37
+CONECT    7   12
+CONECT    8   13
+CONECT    9   11   13
+CONECT   10   12   13
+CONECT   11    2    6    5    9
+CONECT   12   15    7   10    3
+CONECT   13    8   10    4    9
+CONECT   14   16   15   38   39
+CONECT   15   12   14
+CONECT   16   18   14   17   40
+CONECT   17   16   22
+CONECT   18   16   41   19   20
+CONECT   19   18   42
+CONECT   20   18   43   21   22
+CONECT   21   44   20
+CONECT   22   17   45   33   20
+CONECT   23   29   24
+CONECT   24   26   23   25
+CONECT   25    1   24
+CONECT   26   27   24
+CONECT   27   28   33   26
+CONECT   28   29   31   27
+CONECT   29   30   28   23
+CONECT   30   46   47   29
+CONECT   31   32   28
+CONECT   32   48   31   33
+CONECT   33   32   27   22
+CONECT   34    1
+CONECT   35    1
+CONECT   36    1
+CONECT   37    6
+CONECT   38   14
+CONECT   39   14
+CONECT   40   16
+CONECT   41   18
+CONECT   42   19
+CONECT   43   20
+CONECT   44   21
+CONECT   45   22
+CONECT   46   30
+CONECT   47   30
+CONECT   48   32

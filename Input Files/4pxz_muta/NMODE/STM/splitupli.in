@@ -1,0 +1,3 @@
+parm complex.prmtop
+parmstrip :1-396
+parmwrite out ligand.prmtop

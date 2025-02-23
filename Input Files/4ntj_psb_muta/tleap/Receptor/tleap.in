@@ -1,0 +1,22 @@
+source leaprc.water.tip3p
+source leaprc.protein.ff19SB
+source leaprc.lipid21
+loadamberparams frcmod.ionsjc_tip3p
+
+set default PBRadii mbondi2
+
+4ntj =loadpdb 4ntj_cpptraj_remove_amber_muta.pdb
+
+bond 4ntj.2.SG 4ntj.361.SG
+
+set 4ntj box { 103.7740028053522135, 104.5129963159561207, 146.15200379490853606 }
+
+addIons2 4ntj Na+ 0
+addIons2 4ntj Cl- 0
+
+saveamberparm 4ntj 4ntj_rec_muta.prmtop 4ntj_rec_muta.inpcrd
+
+savepdb 4ntj 4ntj_muta_tleap.pdb
+
+quit
+

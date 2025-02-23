@@ -1,0 +1,6 @@
+#Change the name of prmtop
+parm 6at.prmtop
+trajin 06_Prod.crd 1 200 25
+#Change the sequence and add 'outprefix trunc', remember the ligand number like 1435
+strip !:1 outprefix trunc
+trajout trunc_Prod.crd

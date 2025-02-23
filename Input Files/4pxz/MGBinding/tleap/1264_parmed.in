@@ -1,0 +1,5 @@
+loadRestrt 6ad_mg.inpcrd
+setOverwrite True
+add12_6_4 :MG watermodel TIP3P polfile lj_1264_pol.dat
+#nv and c5 is added
+outparm 6ad_mg_1264.prmtop 6ad_mg_1264.inpcrd

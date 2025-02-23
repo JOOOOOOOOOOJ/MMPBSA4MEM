@@ -1,0 +1,28 @@
+source leaprc.water.tip3p
+source leaprc.protein.ff19SB
+source leaprc.gaff2
+source leaprc.lipid21
+loadamberparams frcmod.ionsjc_tip3p
+
+6AD =loadMol2 Ligand/6AD/6AD.mol2
+loadamberparams Ligand/6AD/6AD.frcmod
+
+set default PBRadii mbondi2
+
+4pxz =loadpdb 4pxz_cpptraj_amber.pdb
+
+bond 4pxz.3.SG 4pxz.362.SG
+
+com = combine { 4pxz 6AD }
+
+set com box {103.5800001323223089, 102.60900153219699235, 146.688994020223630054 }
+
+addIons2 com Na+ 0
+addIons2 com Cl- 0
+
+saveamberparm com 4pxz.prmtop 4pxz.inpcrd
+
+savepdb com 4pxz_tleap.pdb
+
+quit
+

@@ -1,0 +1,20 @@
+source leaprc.water.tip3p
+source leaprc.gaff2
+loadamberparams frcmod.ionsjc_tip3p
+
+6AT=loadMol2 6AT/6AT.mol2
+loadamberparams 6AT/6AT.frcmod
+
+set default PBRadii mbondi2
+
+addIons2 6AT Na+ 6
+addIons2 6AT Cl- 3
+
+SolvateOct 6AT TIP3PBOX 8.0
+
+saveamberparm 6AT 6at.prmtop 6at.inpcrd
+
+savepdb 6AT 6at_tleap.pdb
+
+quit
+

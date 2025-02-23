@@ -1,0 +1,10 @@
+&general
+	strip_mask=':WAT:Cl-:Na+:PA:OL:PC:PE:PS:CHL',
+	use_sander=1,
+	startframe=1, endframe=8, interval=1,
+	keep_files=0, debug_printlevel=2
+/
+&nmode
+   dielc=4,maxcyc=100000,drms=0.0005,nmstartframe=1,nmendframe=8,
+   nminterval=1, nmode_igb=1, nmode_istrng=0.150,
+/

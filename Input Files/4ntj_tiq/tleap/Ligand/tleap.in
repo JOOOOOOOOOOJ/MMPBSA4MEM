@@ -1,0 +1,20 @@
+source leaprc.water.tip3p
+source leaprc.gaff2
+loadamberparams frcmod.ionsjc_tip3p
+
+TIQ =loadMol2 TIQ.mol2
+loadamberparams TIQ.frcmod
+
+set default PBRadii mbondi2
+
+addIons2 TIQ Na+ 4
+addIons2 TIQ Cl- 4
+
+SolvateOct TIQ TIP3PBOX 8.0
+
+saveamberparm TIQ tiq.prmtop tiq.inpcrd
+
+savepdb TIQ tiq_tleap.pdb
+
+quit
+
