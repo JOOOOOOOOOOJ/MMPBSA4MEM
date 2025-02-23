@@ -26,7 +26,7 @@ This section is specific to agonist-binding systems, containing input files for 
 
 ### Important Notes:
 1. As mentioned in the article, all mutants share the same ligand topology and trajectory as the wild-type, explaining why the "MD" and "tleap" directories for mutants do not include a "Ligand" section.
-2. Since ligands TIQ and AZJ share the same protein receptor structure, and PSB shares the receptor structure with 6AD and 6AT, the "Receptor" folders in "MD" and "tleap" are missing for `4ntj_tiq`, `4ntj_tiq_muta`, `4pxz`, `4pxz_muta`, `4py0`, and `4py0_muta`.
+2. Since ligands TIQ and AZJ share the same protein receptor structure, and PSB shares the receptor structure with 6AD and 6AT, the "Receptor" folders in "MD" and "tleap" are missing for `4ntj_tiq`, `4ntj_tiq_muta`, `4pxz`, `4pxz_muta`, `4py0`, and `4py0_muta`. However, when it comes to Nmode entropy calculations, the truncated receptor structures for these systems are usually different (based on the distance from ligand). In this case, the topology files are stored in "MTM" under "NMODE".
 3. All input files apply to the GAFF2 force field for ligands. For simulations using the GAFF force field, simply modify the relevant settings to GAFF.
 
 ## 2. Raw Data
