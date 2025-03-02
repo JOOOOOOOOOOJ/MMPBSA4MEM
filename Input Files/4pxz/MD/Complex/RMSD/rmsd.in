@@ -1,0 +1,6 @@
+parm 4pxz.prmtop
+trajin close_average.pdb
+autoimage
+reference ../../4pxz_tleap.pdb [crystal]
+rmsd :8-36,42-71,75-113,121-147,159-227,230-250,263-288,291-318,321-356,360-391@CA out average_crystal.agr ref [crystal]
+run

@@ -1,0 +1,4 @@
+parm 4py0.prmtop
+trajin ../rep9/05_Prod.crd 36 36
+trajout close_average.pdb pdb
+run

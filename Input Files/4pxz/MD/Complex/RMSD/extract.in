@@ -1,0 +1,4 @@
+parm 4pxz.prmtop
+trajin ../rep7/05_Prod.crd 164 164
+trajout close_average.pdb pdb
+run

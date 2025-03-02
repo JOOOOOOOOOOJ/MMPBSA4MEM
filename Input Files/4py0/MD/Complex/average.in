@@ -1,0 +1,27 @@
+parm 4py0.prmtop
+trajin 05_Prod.crd
+trajin ../rep2/05_Prod.crd
+trajin ../rep3/05_Prod.crd
+trajin ../rep4/05_Prod.crd
+trajin ../rep5/05_Prod.crd
+trajin ../rep6/05_Prod.crd
+trajin ../rep7/05_Prod.crd
+trajin ../rep8/05_Prod.crd
+trajin ../rep9/05_Prod.crd
+trajin ../rep10/05_Prod.crd
+trajin ../rep11/05_Prod.crd
+trajin ../rep12/05_Prod.crd
+trajin ../rep13/05_Prod.crd
+trajin ../rep14/05_Prod.crd
+trajin ../rep15/05_Prod.crd
+trajin ../rep16/05_Prod.crd
+trajin ../rep17/05_Prod.crd
+trajin ../rep18/05_Prod.crd
+trajin ../rep19/05_Prod.crd
+trajin ../rep20/05_Prod.crd
+average average.pdb 
+run
+autoimage
+reference average.pdb [aver]
+rmsd :8-36,42-71,75-113,121-147,159-228,230-251,253-257,263-290,292-319,326-356,360-391@CA out 4py0_rep1.agr ref [aver]
+run
