@@ -24,6 +24,9 @@ Like the "MD" section, "tleap" is divided into "Complex," "Receptor," and "Ligan
 ### (6) MGBinding
 This section is specific to agonist-binding systems, containing input files for calculating binding free energy between an agonist and Mg²⁺. To accurately model interactions, a 12-6-4 Lennard-Jones (LJ) nonbonded model is built using `parmed` following Amber tutorial guidelines.
 
+### (7) RMSD
+This section is specific to systems which starts MD simulations with crystal structures (4pxz and 4py0). The corresponding folder is located under "MD/Complex" and has several input or analysis files inside. `average.in` is for calculating the average structure of 20 trajectories and using the output as reference to calculate the RMSD along 20 trajectories. `find_minimum.sh` is for finding the snapshot with minimum RMSD among 20 trajectories and `extract.in` is for extracting this snapshot. `rmsd.in` is for calculating the RMSD between crystal structure (which can be found under "tleap" folder) and the extracted snapshot.
+
 ### Important Notes:
 1. As mentioned in the article, all mutants share the same ligand topology and trajectory as the wild-type, explaining why the "MD" and "tleap" directories for mutants do not include a "Ligand" section.
 2. Since ligands TIQ and AZJ share the same protein receptor structure, and PSB shares the receptor structure with 2MeSADP and 2MeSATP, the "Receptor" folders in "MD" and "tleap" are missing for `4ntj_tiq`, `4ntj_tiq_muta`, `4pxz`, `4pxz_muta`, `4py0`, and `4py0_muta`. However, when it comes to Nmode entropy calculations, the truncated receptor structures for these systems are usually different (based on the distance from ligand). In this case, the topology files are stored in "MTM" under "NMODE".
